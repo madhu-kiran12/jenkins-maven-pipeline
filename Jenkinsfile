@@ -39,7 +39,7 @@ pipeline {
             steps {
                 echo "Simulating deployment..."
                 sh "mkdir -p /tmp/deploy"
-                sh "cp target/jenkins-maven-pipeline-1.0-SNAPSHOT.jar /tmp/deploy/"
+                sh "cp target/*.jar /tmp/deploy/"
             }
         }
     }
